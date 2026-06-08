@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Zeppelin</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #111;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        canvas {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+
+        #help {
+            position: fixed;
+            left: 12px;
+            top: 12px;
+            max-width: 680px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            color: white;
+            background: rgba(0, 0, 0, 0.55);
+            font-size: 13px;
+            line-height: 1.35;
+            user-select: none;
+        }
+
+        #status {
+            display: block;
+            margin-top: 4px;
+            color: #d8ecff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div id="help">
+        <strong>TP2 - Zeppelin</strong><br>
+        W/S: mover | A/D: virar | 1: camera superior | 2: camera lateral | C: alternar lateral | L: luz | N: neblina | P: pousar/decolar
+        <span id="status"></span>
+    </div>
+
+    <script src="https://twgljs.org/dist/4.x/twgl-full.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
